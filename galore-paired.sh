@@ -9,7 +9,7 @@ mkdir Raw
 mkdir Trimmed
 mkdir FastQC
 
-trim_galore -o Trimmed --paired ${EXP1}_1.fastq.gz ${EXP1}_2.fastq.gz --fastqc --fastqc_args "--nogroup -t $CORE -o FastQC"
+trim_galore -o Trimmed --dont-gzip --paired ${EXP1}_1.fastq.gz ${EXP1}_2.fastq.gz --fastqc --fastqc_args "--nogroup -t $CORE -o FastQC"
 
 mv ${EXP1}_1.fastq.gz ./Raw
 mv ${EXP1}_2.fastq.gz ./Raw
