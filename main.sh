@@ -21,8 +21,7 @@ do
     fi
 
     sh `dirname $0`/samtools.sh
-    sh `dirname $0`/stringshort.sh # requires EXPgene
-    sh `dirname $0`/HTseq.sh
+    sh `dirname $0`/HTseq.sh    # requires EXPgene
 
     shift
 done
