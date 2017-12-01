@@ -5,4 +5,4 @@
 
 CORE=$EXPcore    # number of threads. exported from 'main.sh'.
 
-samtools view -Su -@ $CORE ${EXP1}.sam | samtools sort - -@ $CORE ${EXP1}.sorted
+samtools view -Su -@ $CORE ${EXP1}.sam | samtools sort - -@ $CORE -o ${EXP1}.sorted -T ${EXP1}.temp
