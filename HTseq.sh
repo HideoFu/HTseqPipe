@@ -5,4 +5,6 @@
 
 ANNOTATION="$EXPgene"    # reference genome. exported from parent process.
 
+pip show HTseq
+
 htseq-count -f bam -r pos ${EXP1}.sorted.bam $ANNOTATION > ${EXP1}_count.txt
